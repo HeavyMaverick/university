@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 4. Canvas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .task {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 450px;
+        }
+        canvas {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .controls {
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="color"] {
+            width: 50px;
+            height: 35px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>ДЗ 4. Рисование на Canvas</h1>
+    <div class="container">
+        <div class="task">
+            <h2>Задание 1. Дом с забором</h2>
+            <canvas id="houseCanvas" width="400" height="300"></canvas>
+        </div>
+        <div class="task">
+            <h2>Задание 2. Настройка прямоугольника</h2>
+            <canvas id="rectCanvas" width="400" height="300"></canvas>
+            <div class="controls">
+                <div>
+                    X: <input id="rectX" type="number" value="50" min="0" max="350">
+                    Y: <input id="rectY" type="number" value="50" min="0" max="250">
+                </div>
+                <div>
+                    Ширина: <input id="rectWidth" type="number" value="100" min="10" max="350">
+                    Высота: <input id="rectHeight" type="number" value="80" min="10" max="250">
+                </div>
+                <div>
+                    Цвет: <input id="rectColor" type="color" value="#ff0000">
+                </div>
+                <button onclick="drawRectangle()">Нарисовать</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            drawHouse();
+            drawRectangle();
+        };
+    </script>
+</body>
+</html>
