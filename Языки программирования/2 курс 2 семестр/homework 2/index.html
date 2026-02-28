@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 2.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        p {
+            font-size: 24px;
+            margin-top: 4px;
+        }
+        b {
+            font-size: 18px;
+        }
+        .divider-block {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ccc;
+        }
+        input[type="number"] {
+            padding: 5px;
+            font-size: 16px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ДЗ 2. Пример 1</h1>
+    <h5>(четвертый из презентации)</h5>
+    
+    <input id="A" type="radio" name="category" checked="true" onchange="showDescription('A')"/>
+    <label for="A">Категория А</label>
+    <br>
+    <input id="B" type="radio" name="category" onchange="showDescription('B')"/>
+    <label for="B">Категория Б</label>
+    <br>
+    <input id="C" type="radio" name="category" onchange="showDescription('C')"/>
+    <label for="C">Категория В</label>
+    <br>
+    <input id="D" type="radio" name="category" onchange="showDescription('D')"/>
+    <label for="D">Категория Г</label>
+    <br>
+    <input id="E" type="radio" name="category" onchange="showDescription('E')"/>
+    <label for="E">Категория Д</label>
+    <br>
+    <br>
+    <b>Описание:</b>
+    <p id="description">Мотоциклы</p>
+    <div class="divider-block">
+        <h1>Пример 2</h1>
+        <h5>(второй из презентации)</h5>
+        <b>Найди делители числа:</b>
+        <br>
+        <input type="number" id="numberInput" min="2" value="2" onchange="showDivisors(this)"/>
+        <br><br>
+        <b>Делители:</b>
+        <span id="divisors">2</span>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
