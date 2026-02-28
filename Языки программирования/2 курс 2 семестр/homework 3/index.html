@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 3. Галерея с режимами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        input[type="button"]:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>ДЗ 3. Галерея с режимами</h1>
+    <input type="button" id="manualBtn" value="Ручной режим">
+    <input type="button" id="autoBtn" value="Автоматический режим">
+    <h3 id="currentMode">Режим: ручной</h3>
+    <img id="myImage" src="img1.jpg" width="300">
+    <p id="imageName">Котик</p>
+</body>
+</html>
