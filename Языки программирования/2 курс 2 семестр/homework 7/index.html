@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 7. Мышь</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .task {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 450px;
+        }
+        canvas {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body onload="init();">
+    <h1>ДЗ 7. Работа с мышью</h1>
+    <div class="container">
+        <div class="task">
+            <h2>Задание 2. Квадраты по клику</h2>
+            <p>Клик мышью — поставить квадрат</p>
+            <p>Цвет: 1 - красный, 2 - синий, 3 - зеленый</p>
+            <p id="task2Color">Текущий цвет: красный</p>
+            <canvas id="canvas2" width="400" height="400"></canvas>
+        </div>
+        <div class="task">
+            <h2>Задание 3. След мыши</h2>
+            <p>Кнопка мыши нажата — красный след</p>
+            <p>Кнопка мыши отпущена — синий след</p>
+            <canvas id="canvas3" width="400" height="400"></canvas>
+        </div>
+    </div>
+</body>
+</html>
