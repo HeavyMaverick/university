@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 5. Дуги и секторы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .task {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+        }
+        canvas {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body onload="init();">
+    <h1>ДЗ 5. Дуги и секторы</h1>
+    <div class="container">
+        <div class="task">
+            <h2>Задание 1. Концентрические круги</h2>
+            <canvas id="canvas1" width="350" height="350"></canvas>
+        </div>
+        <div class="task">
+            <h2>Задание 2. Секторы из центра</h2>
+            <canvas id="canvas2" width="350" height="350"></canvas>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 6. Перемещение квадрата</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            width: 80px;
+        }
+        canvas {
+            border: 2px solid #000;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body onload="init();">
+    <h1>ДЗ 6. Перемещение квадрата</h1>
+    <p>Управление: стрелки для перемещения</p>
+    <p>Цвет: 1 - красный, 2 - синий, 3 - зеленый</p>
+    <p>Размер: B - большой, M - средний, S - маленький</p>
+    <p id="mode">Режим: перемещение</p>
+    <input type="text" id="x">
+    <input type="text" id="y">
+    <input type="text" id="size">
+    <input type="text" id="color">
+    <br>
+    <canvas id="canvas" width="640" height="480"></canvas>
+</body>
+</html>
